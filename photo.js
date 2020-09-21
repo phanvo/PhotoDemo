@@ -18,7 +18,7 @@ class Photo {
     }
 
     toString(){
-        return "This is a " + this.width + " by " + this.height + " photo and it costs " + this.price();
+        return `This is a ${this.width} by ${this.height} photo and it costs ${this.price()}`;
     }
 }
 
@@ -33,7 +33,7 @@ class MattedPhoto extends Photo{
     }
 
     toString(){
-        return "This is a " + this.width + " by " + this.height + " matted " + this.color + " photo and it costs " + this.price();
+        return `This is a ${this.width} by ${this.height} matted ${this.color} photo and it costs ${this.price()}`;
     }
 }
 
@@ -49,8 +49,7 @@ class FramedPhoto extends Photo{
     }
 
     toString(){
-        return "This is a " + this.width + " by " + this.height + " " + this.material + " framed photo. The style is " 
-                                                                                + this.style + " and it costs " + this.price();
+        return `This is a ${this.width} by ${this.height} ${this.material} framed photo. The style is ${this.style} and it costs ${this.price()}`;
     }
 }
 
